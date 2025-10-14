@@ -42,3 +42,15 @@ int main() {
 
     return 0;
 }
+
+/*
+RESUMEN
+- Shallow copy (copia superficial):
+Si no defines un constructor de copia, el compilador copia la dirección del puntero, no el valor.
+Entonces, ambos objetos apuntan al mismo bloque de memoria, y si uno se modifica o se destruye, afecta al otro.
+
+- Deep copy (copia profunda):
+Al sobrecargar el constructor de copia, creamos un nuevo espacio en memoria y copiamos el valor del puntero original.
+Así, cada objeto tiene su propia copia independiente.
+
+*/
